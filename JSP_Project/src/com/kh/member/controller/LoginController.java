@@ -15,6 +15,9 @@ import com.kh.member.model.vo.Member;
 
 /**
  * Servlet implementation class LoginController
+ * 
+ * 
+ *  테스트입니다.
  */
 @WebServlet("/login.me")
 public class LoginController extends HttpServlet {
