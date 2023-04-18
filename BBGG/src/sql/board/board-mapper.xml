@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="selectThumbnailList">
+	
+
+    	SELECT
+                PHOTO_NO,
+                TITLE,
+                NICKNAME,
+                WRITE_DATE
+            FROM 
+            BOARD 
+            JOIN
+            MEMBER USING(MEMBER_NO)
+            JOIN
+            PHOTO USING(BOARD_NO)
+             WHERE 
+            BOARD.STATUS_YN = 'Y'
+   
+				
+ 	</entry>
+
+</properties>
